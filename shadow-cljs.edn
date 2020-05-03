@@ -2,7 +2,7 @@
 
  :dependencies [[reagent "0.8.1" :exclusions [cljsjs/react cljsjs/react-dom]]]
 
- :dev-http {8000 "public"}
+ :dev-http {8000 "app"}
 
  :builds {:electron-app
           {:target :node-script

@@ -1,7 +1,12 @@
 {
   "name": "sequence-game",
-  "dependencies": {},
-  "scripts":{
+  "main": "app/main.js",
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
     "watch": "shadow-cljs watch electron-app renderer"
   },
   "devDependencies": {
