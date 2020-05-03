@@ -1,6 +1,7 @@
 (ns sequence-game.renderer
   (:require [reagent.core :as r]
-            [reagent.dom  :as rdom]))
+            [reagent.dom  :as rdom]
+            [sequence-game.components.grid :as grid]))
 
 (def clicked-state (r/atom 0))
 
@@ -9,12 +10,7 @@
   (js/console.log "CLICKED"))
 
 (defn hello-html []
-  [:div
-    "The " [:code "clicked-qtd"] " has value: " @clicked-state ". "
-   [:button
-    {:value "CLICK ME"
-     :on-click clicked-action}
-    "!CLICK ME MATE!"]])
+  (grid/grid-render 3))
 
 (defn start []
   (js/console.log "Starting application")
