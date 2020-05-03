@@ -1,0 +1,11 @@
+{
+  "name": "sequence-game",
+  "dependencies": {},
+  "scripts":{
+    "watch": "shadow-cljs watch electron-app renderer"
+  },
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "shadow-cljs": "^2.8.109"
+  }
+}
